@@ -1,0 +1,36 @@
+---
+title: "Learning Quarto in Positron"
+author: "Madison"
+format:
+  html:
+    toc: true
+  pdf:
+    toc: true
+---
+
+## Why Quarto?
+
+Quarto renders one `.qmd` source to multiple output formats (HTML, PDF, Word)
+using Pandoc + LaTeX under the hood for PDF.
+
+## Math (this is where LaTeX shows up inside Quarto)
+
+Inline math: $y_i = \beta_0 + \beta_1 x_i + \varepsilon_i$
+
+Display math:
+
+$$
+\hat\beta = (X'X)^{-1}X'y
+$$
+
+## A code chunk
+
+```{r}
+1 + 1
+```
+
+## Try it
+
+1. Click the **Render** button above (top-right of this editor pane).
+2. Or in the Positron terminal, run: `quarto render demo.qmd --to html`
+3. For a live-reloading preview: `quarto preview demo.qmd`
